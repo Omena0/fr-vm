@@ -1,0 +1,6 @@
+*.asm
+*.ir
+*.bin
+*.bin
+*.fr
+__pycache__

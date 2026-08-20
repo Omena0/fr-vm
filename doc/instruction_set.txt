@@ -1,0 +1,67 @@
+
+LOAD        destination, address
+STORE       address, source
+
+LOAD_CONST  destination, immediate
+MOVE        destination, source
+
+ADD         destination, left, right
+SUB         destination, left, right
+MUL         destination, left, right
+DIV         destination, left, right
+MOD         destination, left, right
+NEG         destination, source
+
+AND         destination, left, right
+OR          destination, left, right
+XOR         destination, left, right
+NOT         destination, source
+SHL         destination, value, shift
+SHR         destination, value, shift
+SAR         destination, value, shift
+
+CMP_EQ      left, right
+CMP_NE      left, right
+CMP_LT      left, right
+CMP_LE      left, right
+CMP_GT      left, right
+CMP_GE      left, right
+
+JUMP        target
+JZ          target
+JNZ         target
+JC          target
+JNC         target
+JS          target
+JNS         target
+JO          target
+JNO         target
+
+CALL        target
+RETURN
+
+PUSH        source
+POP         destination
+
+LOAD_SP     destination
+STORE_SP    source
+ADD_SP      amount
+SUB_SP      amount
+
+LOAD_BYTE   destination, address
+STORE_BYTE  address, source
+LOAD_WORD   destination, address
+STORE_WORD  address, source
+LOAD_DWORD  destination, address
+STORE_DWORD address, source
+LOAD_QWORD  destination, address
+STORE_QWORD address, source
+
+SYSCALL     syscall_number
+HALT
+
+ENABLE_INT
+DISABLE_INT
+
+BREAK
+NOP
